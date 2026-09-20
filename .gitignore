@@ -1,0 +1,9 @@
+node_modules
+/dist
+/coverage
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+*.local
+package-lock.json
