@@ -146,9 +146,9 @@ describe('BookService', () => {
     expect(deletedBook).toBeUndefined();
   });
 
-  // Test : Ne pas supprimer un livre qui n'existe pas
-  it('should not delete a book that does not exist', () => {
-    const result = service.deleteBook(999);
+  // Test : Ne pas supprimer un livre avec un id invalide
+  it('should not delete a book with an invalid id', () => {
+    const result = service.deleteBook(null as unknown as number);
     expect(result).toBe(false);
   });
 
